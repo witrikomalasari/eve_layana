@@ -1,3 +1,4 @@
+import {ExploreIcon, HomeIcon, ProfileIcon, TicketIcon} from '@assets/Icons';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Explore from '@screens/Explore/Explore';
 import Home from '@screens/Home/Home';
@@ -21,50 +22,47 @@ const MainTabNavigator: FC<IMainTabNav> = () => {
     <TabNav.Navigator
       backBehavior="initialRoute"
       initialRouteName="Home"
-      // screenOptions={{
-      //   lazy: true,
-      //   headerShown: false,
-      //   tabBarStyle: {
-      //     height: 60,
-      //     paddingTop: 10,
-      //     paddingBottom: 10,
-      //     width: width,
-      //     paddingHorizontal: width / 15,
-      //   },
-      //   tabBarInactiveTintColor: Colors.black,
-      //   tabBarActiveTintColor: Colors.primary,
-      // }}
-    >
+      screenOptions={{
+        // lazy: true,
+        headerShown: false,
+        tabBarStyle: {
+          height: 80,
+          paddingTop: 10,
+          paddingBottom: 20,
+          justifyContent: 'center',
+          alignItems: 'center',
+        },
+      }}>
       <TabNav.Screen
         name="Home"
         component={Home}
         options={{
-          tabBarShowLabel: false,
-          tabBarIcon: ({color}) => <HomeExplore width={26} color={color} />,
+          tabBarShowLabel: true,
+          tabBarIcon: ({color}) => <HomeIcon width={25} color={color} />,
         }}
       />
       <TabNav.Screen
         name="Explore"
         component={Explore}
         options={{
-          tabBarShowLabel: false,
-          tabBarIcon: ({color}) => <ExploreIcon width={26} color={color} />,
+          tabBarShowLabel: true,
+          tabBarIcon: ({color}) => <ExploreIcon width={25} color={color} />,
         }}
       />
       <TabNav.Screen
         name="Ticket"
         component={Ticket}
         options={{
-          tabBarShowLabel: false,
-          tabBarIcon: ({color}) => <TicketIcon width={26} color={color} />,
+          tabBarShowLabel: true,
+          tabBarIcon: ({color}) => <TicketIcon width={25} color={color} />,
         }}
       />
       <TabNav.Screen
         name="Profile"
         component={Profile}
         options={{
-          tabBarShowLabel: false,
-          tabBarIcon: ({color}) => <ProfileIcon width={26} color={color} />,
+          tabBarShowLabel: true,
+          tabBarIcon: ({color}) => <ProfileIcon width={24} color={color} />,
         }}
       />
     </TabNav.Navigator>
