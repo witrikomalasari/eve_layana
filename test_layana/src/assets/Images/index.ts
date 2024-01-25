@@ -1,5 +1,5 @@
 export const images = {
-  LogoLayana: require('./LogoEve.png'),
+  LogoEve: require('./LogoEve.png'),
   LogoGuardian: require('./logoGuardian.png'),
   CloseEye: require('./close-eye.png'),
   ViewEye: require('./view_eye.png'),

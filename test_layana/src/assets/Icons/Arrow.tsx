@@ -1,8 +1,8 @@
-import SvgWrapper from '@components/atoms/SvgWrapper';
+import {SvgWrapper} from '@components/atoms';
 import React from 'react';
 import {Path, Svg} from 'react-native-svg';
 
-const Arrow = ({width, height, color}) => {
+export const Arrow = ({width, height, color}) => {
   return (
     <SvgWrapper
       width={width}

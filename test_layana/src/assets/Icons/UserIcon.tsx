@@ -1,7 +1,7 @@
-import SvgWrapper from '@components/atoms/SvgWrapper';
 import React from 'react';
 import {Circle, Path, Svg} from 'react-native-svg';
 import IconProps from './interfaceProps';
+import {SvgWrapper} from '@components/atoms';
 
 export const UserIcon = ({width, height, color}: IconProps) => {
   return (

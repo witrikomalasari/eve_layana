@@ -1,8 +1,8 @@
-import SvgWrapper from '@components/atoms/SvgWrapper';
+import {SvgWrapper} from '@components/atoms';
 import React from 'react';
 import {Path, Svg} from 'react-native-svg';
 
-const Calender = ({width, height, color}) => {
+export const Calender = ({width, height, color}) => {
   return (
     <SvgWrapper
       width={width}

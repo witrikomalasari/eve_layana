@@ -26,9 +26,9 @@ const MainTabNavigator: FC<IMainTabNav> = () => {
         // lazy: true,
         headerShown: false,
         tabBarStyle: {
-          height: 80,
-          paddingTop: 10,
-          paddingBottom: 20,
+          height: 69,
+          paddingTop: 8,
+          paddingBottom: 8,
           justifyContent: 'center',
           alignItems: 'center',
         },

@@ -8,7 +8,7 @@ interface ISVGWrapper {
   children: ReactNode;
 }
 
-const SvgWrapper: FC<ISVGWrapper> = ({
+export const SvgWrapper: FC<ISVGWrapper> = ({
   width,
   height,
   aspectRatio,

@@ -10,6 +10,7 @@ const size = {
   font20: 20,
   font22: 22,
   font24: 24,
+  font28: 28,
 };
 
 const weight = {

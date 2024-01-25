@@ -6,7 +6,7 @@ interface ISpacerProps {
   height?: number;
 }
 
-const Spacer: FC<ISpacerProps> = ({width, height}) => {
+export const Spacer: FC<ISpacerProps> = ({width, height}) => {
   return <View style={{width, height}} />;
 };
 

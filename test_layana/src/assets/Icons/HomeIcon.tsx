@@ -1,7 +1,7 @@
-import SvgWrapper from '@components/atoms/SvgWrapper';
 import React from 'react';
 import {Path, Svg} from 'react-native-svg';
 import IconProps from './interfaceProps';
+import {SvgWrapper} from '@components/atoms';
 
 export const HomeIcon = ({width, height, color}: IconProps) => {
   return (
