@@ -1,8 +1,8 @@
 import {colors} from '@theme/colors';
 import React, {FC, useState} from 'react';
 import {StyleSheet, TextInput, View, ViewStyle} from 'react-native';
-import Spacer from './Spacer';
 import EveLayanaText from './EveLayanaText/EveLayanaText';
+import Spacer from './Spacer';
 
 interface IInputProps {
   type?: 'text' | 'password' | 'number';
@@ -12,6 +12,8 @@ interface IInputProps {
   onChange?: (text: string) => void;
   value?: string;
   errorText?: string;
+  // iconLeft?: ReactNode;
+  // iconRight?: ReactNode;
 }
 
 export const Input: FC<IInputProps> = ({
@@ -22,6 +24,8 @@ export const Input: FC<IInputProps> = ({
   onChange,
   value,
   errorText = '',
+  // iconLeft,
+  // iconRight,
 }) => {
   const [uiValue, setUiValue] = useState<string>(value ? value : '');
 
@@ -36,6 +40,8 @@ export const Input: FC<IInputProps> = ({
         {label}
       </EveLayanaText>
       <Spacer height={8} />
+
+      {/* {iconLeft} */}
       <TextInput
         keyboardType={type === 'text' ? 'ascii-capable' : 'number-pad'}
         placeholder={placeholder}
@@ -47,6 +53,8 @@ export const Input: FC<IInputProps> = ({
         value={uiValue}
         style={containerStyle}
       />
+      {/* {iconRight} */}
+
       <Spacer height={18} />
       {errorText ? (
         <EveLayanaText style={{color: colors.errorText, paddingLeft: 5}}>
