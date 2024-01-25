@@ -8,7 +8,7 @@ export const UserIcon = ({width, height, color}: IconProps) => {
     <SvgWrapper
       width={width}
       height={height}
-      aspectRatio={25 / 24}
+      aspectRatio={24 / 25}
       children={
         <Svg width="24" height="25" viewBox="0 0 24 25" fill="none">
           <Circle cx="12" cy="6.5" r="4" fill="#0F172A" />

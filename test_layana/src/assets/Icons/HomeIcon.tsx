@@ -8,7 +8,7 @@ export const HomeIcon = ({width, height, color}: IconProps) => {
     <SvgWrapper
       width={width}
       height={height}
-      aspectRatio={25 / 24}
+      aspectRatio={21 / 20}
       children={
         <Svg width="21" height="20" viewBox="0 0 21 20" fill="none">
           <Path
